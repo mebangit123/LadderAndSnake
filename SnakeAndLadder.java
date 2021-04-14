@@ -8,6 +8,7 @@ public class SnakeAndLadder {
 		int start = 0;
 		int ladder = 1;
 		int snake = 2;
+		int no_times_roll = 0;
 
 
 		while(player < win)
@@ -32,7 +33,11 @@ public class SnakeAndLadder {
 				{
 					player += 0;
 				}
+			System.out.println("position =" +player);
+			no_times_roll++;
 		}
-		System.out.println(player);
+		System.out.println("You have the game");
+		System.out.println("Number of Times Die is roll :"+no_times_roll);
+
 	}
 }
